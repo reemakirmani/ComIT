@@ -1,2 +1,3 @@
 # ComIT
  
+React ComIT course
