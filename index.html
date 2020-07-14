@@ -2,9 +2,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create User</title>
 </head>
 <body>
-    <hi>document example</hi>
+    <h1 style="font-size: xx-large;"><strong>Create User</strong></h1> 
+    <hr>   
+    <form action="index.html" method="GET">
+        <label form="email"><strong>Email:</strong></label>
+        <input type="email" placeholder="Email" id="email" required><br>
+        <br>
+        <label form="text"><strong>Username</strong></label>
+        <input type="text" placeholder="Username" id="username" maxlength="12" size="30" required><br>
+        <br>
+        <label form="password"><strong>Password</strong></label>
+        <input type="password" placeholder="Password" id="password" size="30" maxlength="8" required><br>
+        <br>
+        <label form="bio"><strong>Bio:</strong></label><br>
+        <textarea id="bio" placeholder="give a brief description of this user" rows="5" cols="50"></textarea><br>
+        <br>
+        <fieldset>
+        <legend style="font-size: xx-large;"><strong>Interest</strong></legend>
+        <label checked="checked"><strong>Select Your favourite Superhero</strong></label>
+        <ul>
+        <li><input type="radio" name="radio" value="Superman">Superwoman</li>
+        <li><input type="radio" name="radio" value="Batman">Batman</li>
+        <li><input type="radio" name="radio" value="Wonderwoman" checked>Wonderwoman</li>
+        <li><input type="radio" name="radio" value="Hulk">Hulk</li>
+        <li><input type="radio" name="radio" value="Thor">Thor</li>
+        </ul>
+        <label><strong>Select Your favourite Video game</strong></label>
+        <ul>
+            <li><input type="checkbox" name="genre" value="Fifa" checked>Fifa</li>
+            <li><input type="checkbox" name="genre" value="NHL">NHL</li>
+            <li><input type="checkbox" name="genre" value="Resident Evil">Resident Evil</li>
+            <li><input type="checkbox" name="genre" value="Uncharted" checked>Uncharted</li>
+        </ul>
+        </fieldset>
+        <button type="submit"><a href="create-user.html">Create User</a></button>
+    </form>
 </body>
 </html>
